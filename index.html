@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Online shop</title>
+  </head>
+  <body> 
+    
+    <div class="main-container">
+      <div class="head-container">
+        <img
+          class="traffic-lights"
+          src="./Traffic Lights (Big Sur).svg"
+          alt="Traffic Lights"
+        />
+        <svg class="toolbar" xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+            <path d="M9.66327 21H24.3367C26.1179 21 27 20.1526 27 18.4742V8.5258C27 6.84737 26.1179 6 24.3367 6H9.66327C7.89059 6 7 6.83922 7 8.5258V18.4742C7 20.1608 7.89059 21 9.66327 21ZM9.68024 19.6882C8.83206 19.6882 8.36556 19.2564 8.36556 18.409V8.59098C8.36556 7.74362 8.83206 7.31179 9.68024 7.31179H13.4631V19.6882H9.68024ZM24.3198 7.31179C25.1595 7.31179 25.6344 7.74362 25.6344 8.59098V18.409C25.6344 19.2564 25.1595 19.6882 24.3198 19.6882H14.7947V7.31179H24.3198ZM11.8261 10.3346C12.0891 10.3346 12.3096 10.1146 12.3096 9.87833C12.3096 9.63389 12.0891 9.42205 11.8261 9.42205H10.011C9.75657 9.42205 9.52757 9.63389 9.52757 9.87833C9.52757 10.1146 9.75657 10.3346 10.011 10.3346H11.8261ZM11.8261 12.4449C12.0891 12.4449 12.3096 12.2249 12.3096 11.9804C12.3096 11.736 12.0891 11.5323 11.8261 11.5323H10.011C9.75657 11.5323 9.52757 11.736 9.52757 11.9804C9.52757 12.2249 9.75657 12.4449 10.011 12.4449H11.8261ZM11.8261 14.547C12.0891 14.547 12.3096 14.3433 12.3096 14.0989C12.3096 13.8544 12.0891 13.6426 11.8261 13.6426H10.011C9.75657 13.6426 9.52757 13.8544 9.52757 14.0989C9.52757 14.3433 9.75657 14.547 10.011 14.547H11.8261Z" fill="#737373"/>
+          </svg>
+        <svg
+          class="left-errow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="33"
+          height="28"
+          viewBox="0 0 33 28"
+          fill="none"
+        >
+          <path
+            d="M18.7239 20.7824L12.2372 14.544C12.0818 14.3909 12 14.2055 12 14.004C12 13.7945 12.09 13.593 12.2454 13.464L18.7239 7.21762C18.863 7.0806 19.0429 7 19.2556 7C19.681 7 20 7.32239 20 7.74151C20 7.93495 19.9182 8.12838 19.7873 8.2654L13.8323 14.004L19.7873 19.7427C19.9182 19.8797 20 20.0651 20 20.2666C20 20.6857 19.681 21 19.2556 21C19.0429 21 18.863 20.9194 18.7239 20.7824Z"
+            fill="#737373"
+          />
+        </svg>
+        <svg
+          class="right-errow"
+          xmlns="http://www.w3.org/2000/svg"
+          width="33"
+          height="28"
+          viewBox="0 0 33 28"
+          fill="none"
+        >
+          <path
+            d="M12.7444 21C12.9571 21 13.137 20.9194 13.2761 20.7825L19.7628 14.5397C19.9182 14.3867 20 14.2014 20 14C20 13.7906 19.9182 13.5972 19.7628 13.4603L13.2843 7.22555C13.137 7.08055 12.9571 7 12.7444 7C12.319 7 12 7.32221 12 7.74108C12 7.93441 12.0818 8.12773 12.2127 8.26467L18.1677 14L12.2127 19.7353C12.0818 19.8723 12 20.0575 12 20.2589C12 20.6778 12.319 21 12.7444 21Z"
+            fill="#BFBFBF"
+          />
+        </svg>
+       <div class="fari-inner"> <svg
+          class="fari"
+          xmlns="http://www.w3.org/2000/svg"
+          width="33"
+          height="28"
+          viewBox="0 0 33 28"
+          fill="none"
+        >
+          <path
+            d="M17 23C17.1348 23 17.3538 22.9495 17.5644 22.8317C22.3574 20.147 24 19.0109 24 15.9391V9.50099C24 8.61733 23.6209 8.3396 22.9049 8.03663C21.911 7.62426 18.7016 6.47129 17.7076 6.12624C17.4801 6.0505 17.2359 6 17 6C16.7641 6 16.5199 6.06733 16.3008 6.12624C15.3069 6.41238 12.089 7.63267 11.0951 8.03663C10.3875 8.33119 10 8.61733 10 9.50099V15.9391C10 19.0109 11.651 20.1386 16.4356 22.8317C16.6546 22.9495 16.8652 23 17 23ZM17.3369 7.43069C18.6089 7.93564 21.077 8.82772 22.3827 9.27376C22.6101 9.35792 22.6606 9.47574 22.6606 9.76188V15.6277C22.6606 18.2282 21.414 18.9099 17.5223 21.2748C17.278 21.4262 17.1432 21.4683 17.0084 21.4767V7.35495C17.0927 7.35495 17.2022 7.3802 17.3369 7.43069Z"
+            fill="#737373"
+          />
+        </svg>
+        <div class="inner-container"> 
+           <div class="header-container"> <img class="lock" src="./Lock.svg" alt="lock icon">
+          </svg>
+          <p class="site-header">Slabshop.com</p> </div>
+          <svg
+            class="refresh-errow"
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="13"
+            viewBox="0 0 10 13"
+            fill="none"
+          >
+            <path
+              d="M4.79344 6.03205C4.93492 6.03205 5.04244 5.98374 5.12168 5.89317L7.45331 3.3934C7.55518 3.29076 7.59479 3.17 7.59479 3.03112C7.59479 2.89828 7.54386 2.76544 7.45331 2.66883L5.12168 0.144914C5.04244 0.0483047 4.92926 0 4.79344 0C4.53877 0 4.34635 0.217371 4.34635 0.495123C4.34635 0.621923 4.39162 0.742685 4.47085 0.839294L5.98189 2.42127C5.65931 2.36089 5.33107 2.32466 5.00283 2.32466C2.22977 2.32466 0 4.69763 0 7.65629C0 10.621 2.22977 13 5.00283 13C7.77589 13 10 10.621 10 7.65629C10 7.36647 9.80758 7.15513 9.53028 7.15513C9.26429 7.15513 9.08885 7.36647 9.08885 7.65629C9.08885 10.0836 7.27221 12.0279 5.00283 12.0279C2.73345 12.0279 0.911149 10.0836 0.911149 7.65629C0.911149 5.23502 2.73345 3.2968 5.00283 3.2968C5.43294 3.2968 5.82909 3.33302 6.16865 3.41152L4.47651 5.20483C4.39162 5.30144 4.34635 5.4222 4.34635 5.549C4.34635 5.82675 4.53877 6.03205 4.79344 6.03205Z"
+              fill="#797979"
+            />
+          </svg>
+        </div>
+    </div> 
+        <div class="right-corner"><img class="down-errow" src="./Toolbar Item.svg" alt="">
+            <svg class="up-errow" xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+                <path d="M16.5042 16.4085C16.8676 16.4085 17.1718 16.1054 17.1718 15.7519V7.10634L17.1211 5.8436L17.6958 6.44129L18.9718 7.80505C19.0901 7.93974 19.2676 8.00709 19.4282 8.00709C19.7831 8.00709 20.0451 7.75454 20.0451 7.40939C20.0451 7.23261 19.9775 7.09792 19.8507 6.97164L16.9944 4.22729C16.8254 4.05893 16.6732 4 16.5042 4C16.3352 4 16.1831 4.05893 16.0141 4.22729L13.1577 6.97164C13.031 7.09792 12.9549 7.23261 12.9549 7.40939C12.9549 7.75454 13.2169 8.00709 13.5634 8.00709C13.7324 8.00709 13.9099 7.93974 14.0282 7.80505L15.3127 6.44129L15.8873 5.8436L15.8282 7.10634V15.7519C15.8282 16.1054 16.1408 16.4085 16.5042 16.4085ZM11.6535 23H21.3465C23.1127 23 24 22.1245 24 20.3903V11.9889C24 10.2548 23.1127 9.37926 21.3465 9.37926H18.9887V10.7346H21.3211C22.1577 10.7346 22.6394 11.1892 22.6394 12.0647V20.3146C22.6394 21.1901 22.1577 21.6447 21.3211 21.6447H11.6704C10.8254 21.6447 10.3606 21.1901 10.3606 20.3146V12.0647C10.3606 11.1892 10.8254 10.7346 11.6704 10.7346H14.0113V9.37926H11.6535C9.88732 9.37926 9 10.2548 9 11.9889V20.3903C9 22.1245 9.88732 23 11.6535 23Z" fill="#737373"/>
+              </svg>
+              <svg class="plus" xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+                <path d="M17 21C17.4158 21 17.7636 20.6758 17.7636 20.2767V14.7482H23.2448C23.6521 14.7482 24 14.4074 24 14C24 13.5926 23.6521 13.2601 23.2448 13.2601H17.7636V7.72328C17.7636 7.32423 17.4158 7 17 7C16.5842 7 16.2448 7.32423 16.2448 7.72328V13.2601H10.7552C10.3479 13.2601 10 13.5926 10 14C10 14.4074 10.3479 14.7482 10.7552 14.7482H16.2448V20.2767C16.2448 20.6758 16.5842 21 17 21Z" fill="#737373"/>
+              </svg>
+              <svg class="square" xmlns="http://www.w3.org/2000/svg" width="33" height="28" viewBox="0 0 33 28" fill="none">
+                <path d="M10.6711 18.243H12.1257V19.4845C12.1257 21.1561 13.0104 22 14.7968 22H23.3374C25.1068 22 26 21.1561 26 19.4845V11.2726C26 9.60095 25.1068 8.75704 23.3374 8.75704H21.8743V7.51551C21.8743 5.84391 20.9811 5 19.2117 5H10.6711C8.88469 5 8 5.84391 8 7.51551V15.7274C8 17.399 8.88469 18.243 10.6711 18.243ZM10.6881 16.9365C9.83743 16.9365 9.36957 16.4983 9.36957 15.6544V7.58854C9.36957 6.74463 9.83743 6.30644 10.6881 6.30644H19.1862C20.0284 6.30644 20.5047 6.74463 20.5047 7.58854V8.75704H14.7968C13.0104 8.75704 12.1257 9.59284 12.1257 11.2726V16.9365H10.6881ZM14.8138 20.6936C13.9716 20.6936 13.4953 20.2554 13.4953 19.4115V11.3456C13.4953 10.5017 13.9716 10.0635 14.8138 10.0635H23.3119C24.1541 10.0635 24.6304 10.5017 24.6304 11.3456V19.4115C24.6304 20.2554 24.1541 20.6936 23.3119 20.6936H14.8138Z" fill="#737373"/>
+              </svg>
+            </div>
+           
+      </div> 
+      <div class="black-container">
+        
+           <nav class="left-container"> <a class="left-link left-1" href="#">Open Sponsorship</a>
+            <a class="left-link left-2" href="#">Call Center</a>
+            <a class="left-link left-3" href="#">Help</a>
+            <a class="left-link left-4" href="#">Tutorial </a></nav>
+           <nav class="right-container"> <a class="right-link right-1" href="#">Be Partners</a>
+            <a class="right-link right-2" href="#">Open Shop</a>
+            <div class="download-english"><a class="right-link right-3" href="#">Download </a>
+                <a class="right-link" href="#"><img class="Frame" src="./Frame.svg" alt="download icon"></a>
+            <a class="right-link right-4" href="#">English </a>
+        <a class="right-link" href="#"><img class="Frame" src="./Frame.svg" alt="download icon"></a></div></nav>
+        
+      </div> 
+    </div>   
+
+    
+
+    <div class="Slabshop-container">
+        <div class="Slabshop-inner"> <img class="Circle" src="./Circle.svg" alt="icon of Circle"><p class="logo-title">Slabshop</p>
+            <div class="location-container"><img src="./location frame.svg" alt="icon of location">
+        <p class="location">Indonesia, Yogyakarta</p> <img src="./errow down.svg" alt="">
+</div> 
+<div class="search-container"><p class="search-text">Search in Slabshop</p> <img class="magnifaing-glass" src="./magnifaing glass.svg" alt="">
+</div> 
+<div class="category-container"><p class="category-text">category</p><img class="qveda-isari" src="./qveda-isari.svg" alt="">
+</div>
+    </div> 
+    <div class="rightside-information">
+        <div class="icons"><img class="bell" src="./zari.svg" alt=""><img class="house" src="./saxli.svg" alt=""><img class="bag" src="./chanta.svg" alt="">
+    </div>
+    </div> 
+    <div class="person"><img class="picture" src="./Ellipse 2.jpg" alt="picture of person">
+        <p class="pikachu">Pikachu <span class="online">online</span></p>
+    </div>
+    </div> 
+    <div class="navbar-container">
+        <nav class="navbar">
+            <a class="link" href="#">Popular Search</a> 
+            <a class="link" href="#">:</a>
+            <a class="link" href="#">Fashion</a>
+            <a class="link" href="#">Shoes Man</a>
+            <a class="link" href="#">Gadget</a>
+            <a class="link" href="#">Computer</a> 
+            <a class="link" href="#">Laptop</a>
+            <a class="link" href="#">Flash Sale</a>
+            <a class="link" href="#">Accessories</a>
+        </nav>
+        <div class="hide-errowcontainer"><p class="text-hide">Hide</p><img class="nav-downerrow" src="./errow down.svg" alt="">
+        </div>
+    </div>
+    <div class="picture-container"><img class="image1" src="./Image1.png" alt=""><img class="image2" src="./Image2.png" alt=""> 
+    </div>
+    <div class="underpicture-container">
+        <div class="circles">
+            <div class="long-circle">
+            </div>
+                <div class="small-circles"><img class="small-circle" src="./Circle.svg" alt="">
+               <img class="small-circle" src="./Circle.svg" alt="">
+                <img class="small-circle" src="./Circle.svg" alt="">
+            </div>
+        </div> 
+        <div class="left-right">
+            <img class="lefterrow-frame" src="./left-errow Frame.svg" alt="">
+            <p class="back">Back</p> 
+            <p class="next">Next</p>
+            <img src="./right-errow Frame.svg" alt="">
+        </div>
+    </div>
+    <div class="fleshsale-container">
+        <img class="image3" src="./Image3.png" alt="picture">
+        <div class="information-container">
+            <p class="header">Bills and Utility</p> 
+            <div class="see-all"><p class="seeall-text">See All</p>
+            <img class="isari-marjvniv" src="./isari marjvniv.svg" alt="">
+        </div> 
+        <div class="nav-container">
+            <nav class="inner-nav">
+                <a class="bmuli special-bmuli" href="#">Balance</a>
+                <a class="bmuli" href="#">Top Up</a>
+                <a  class="bmuli" href="#">Internet</a>
+                <a  class="bmuli" href="#">Electricity Tokens</a>
+                <a  class="bmuli" href="#">Tickets</a>
+                <a  class="bmuli" href="#">Data Package</a>
+                <a  class="bmuli" href="#">Pulse</a>
+                <a  class="bmuli" href="#">Voucher</a>
+            </nav>
+        </div> 
+        <div class="monacemebi">
+          <p class="code-transaction">Code Transaction</p>
+          <p class="payment-amount">Payment Amount</p>
+        </div> 
+        <div class="ujrebi">
+        <div class="ujra-1"><p class="code-1">Ex: 276NHVF387XN3487</p>
+        </div>
+        <div class="ujra-2"><p class="code-2">Ex : $100.000</p>
+        </div>
+      </div>
+        </div> 
+         <div class="underside-information">
+          <div class="purchase-button">
+            <p class="purchase">Purchase</p>
+            <img class="purchase-errow" src="purchase errow.svg" alt="">
+          </div>
+          <div class="dzaxilis-nishani">
+            <img class="dzaxilis-frame" src="./dzaxilis nishani.svg" alt="">
+         <div class="help-container"> <p class="help">Help!</p></div>
+        </div>
+         </div> 
+    </div>  
+    <br>
+    <div class="choicecategory-container">
+      <p class="choice-category">Choice Category</p> 
+      <div class="products-container">
+       <div class="product-1">
+        <div class="violettorce-container"> <img class="violet-torce" src="./violet-torce.svg" alt="">
+        </div>
+        <div class="manfahsion-container"><p class="man-fashion">Man Fashion</p>
+        </div>
+      </div> 
+      <div class="product-2">
+        <div class="cyanproduct-container"> <img class="cyan-frame" src="./cyan-frame.svg" alt="">
+        </div>
+        <div class="Gadget-container"><p class="Gadget-Electronic">Gadget Electronic</p>
+        </div>
+      </div> 
+      
+      <div class="product-3">
+        <div class="voucher-container"> <img class="vouchergame-frame" src="./voucher game.svg" alt="">
+        </div>
+        <div class="vouchergame-container"><p class="voucher-game">Gadget Electronic</p>
+        </div>
+      </div>  
+      <div class="product-4">
+        <div class="house-container"> <img class="property-frame" src="./property frame.svg" alt="">
+        </div>
+        <div class="property-container"><p class="property">Property</p>
+        </div>
+      </div>  
+      <div class="product-5">
+        <div class="kids-contaner"> <img class="clothes-frame" src="./clothes frame.svg" alt="">
+        </div>
+        <div class="kidsfashion-container"><p class="kids-fashion">Kids Fashion</p>
+        </div>
+      </div>  
+
+      <div class="product-6">
+        <div class="computer-contaner"> <img class="computer-frame" src="./computer frame.svg" alt="">
+        </div>
+        <div class="leptot-container"><p class="computer-leptop">Computer & Laptop</p>
+        </div>
+      </div>  
+
+      <div class="product-7">
+        <div class="women-contaner"> <img class="womenfashion-frame" src="./women-fashion.svg" alt="">
+        </div>
+        <div class="fashion-container"><p class="womenfashion-container">Woman
+          Fashion</p>
+        </div>
+      </div>  
+
+      <div class="product-8">
+        <div class="sports-contaner"> <img class="sports-frame" src="./sports-frame.svg" alt="">
+        </div>
+        <div class="ball-container"><p class="sports">Sports</p>
+        </div>
+      </div>  
+
+      <div class="product-9">
+        <div class="gaming-contaner"> <img class="gaming-frame" src="./gaming frame.svg" alt="">
+        </div>
+        <div class="game-container"><p class="gaming">Gaming</p>
+        </div>
+      </div>  
+
+      <div class="product-10">
+        <div class="film-contaner"> <img class="film-frame" src="./film frame.svg" alt="">
+        </div>
+        <div class="music-container"><p class="film-music">Film & Music</p>
+        </div>
+      </div>  
+
+      <div class="product-11">
+        <div class="view-contaner"> <img class="view-frame" src="./view all frame.svg" alt="">
+        </div>
+        <div class="viewall-container"><p class="view-all">View All</p>
+        </div>
+      </div>  
+      </div>
+    </div> 
+    <div class="flashsale-container">
+      <div class="november-time"><p class="november-sale">November Super Flash Sale ⚡</p> 
+      <div class="time-container"><p class="ends-in">Ends in</p>
+      <div class="timebox-1"><p class="time-1">04</p></div> 
+      <p class="twopoint-1">:</p> 
+      <div class="timebox-2"><p class="time-2">24</p></div>
+      <p class="timepoint-2">:</p> 
+      <div class="timebox-3"><p class="time-3">39</p></div>
+    </div>
+  </div>
+   <div class="nivtebi"><div class="nivtebiscontainer-1">
+    <div class="bottle-container"><img class="bottle" src="./bottle.png" alt="">
+   </div>
+   <p class="head-1">Property</p> 
+   <p class="bottle-text">Durable tupperware bottles (Black Version)</p> 
+  <div class="pricepercent-1"> <p class="fasi">$20.00 <span class="newprice-1">$10.00</span></p> 
+   <div class="discount-1"><p class="percent">- 50%</p>
+  </div>
+</div> 
+<div class="loadingbar-1"><img class="loading-1" src="./Loading Bar.svg" alt=""> 
+  <p class="sold-1">120 Sold</p>
+</div>
+   </div> 
+
+    <div class="nivtebiscontainer-2">
+    <div class="headphone-container"><img class="headphone" src="./headphones image.png" alt="">
+   </div>
+   <p class="head-2">Electronic</p> 
+   <p class="headphone-text">Youth The Child Bluetooth Headphones</p> 
+  <div class="pricepercent-2"> <p class="fasi-2">$35.00 <span class="newprice-2">$15.00</span></p> 
+   <div class="discount-2"><p class="percent-2">- 45%</p>
+  </div>
+</div> 
+<div class="loadingbar-2"><img class="loading-2" src="./Loading Bar-2.svg" alt=""> 
+  <p class="sold-2">320 Sold</p>
+</div>
+   </div> 
+
+   <div class="nivtebiscontainer-3">
+    <div class="ctrl-container"><img class="ctrl-bottle" src="./ctrl bottle.png" alt="">
+   </div>
+   <p class="head-3">Property</p> 
+   <p class="ctrlbottle-text">CTRL brand tupperware bottles</p> 
+  <div class="pricepercent-3"> <p class="fasi-3">$86.40 <span class="newprice-3">$42.75 </span></p> 
+   <div class="discount-3"><p class="percent-3">- 58%</p>
+  </div>
+</div> 
+<div class="loadingbar-3"><img class="loading-3" src="./Loading Bar-3.svg" alt=""> 
+  <p class="sold-2">90 Sold</p>
+</div>
+   </div>
+   <div class="nivtebiscontainer-4">
+    <div class="car-container"><img class="car" src="./car image.png" alt="">
+   </div>
+   <p class="head-4">Automotive</p> 
+   <p class="car-text">Miniature hotwheels black sports</p> 
+  <div class="pricepercent-4"> <p class="fasi-4">$52.25  <span class="newprice-4">$26.67 </span></p> 
+   <div class="discount-4"><p class="percent-4">- 60%</p>
+  </div>
+</div> 
+<div class="loadingbar-4"><img class="loading-4" src="./Loading Bar-4.svg" alt=""> 
+  <p class="sold-3">180 Sold</p>
+</div>
+   </div>
+
+
+   <div class="nivtebiscontainer-5">
+    <div class="superbass-container"><img class="superbass" src="./super bass.png" alt="">
+   </div>
+   <p class="head-5">Electronic</p> 
+   <p class="superbass-text">Headphone Super Bass Stereo High Quality</p> 
+  <div class="pricepercent-5"> <p class="fasi-5">$49.99  <span class="newprice-5">$40.04 </span></p> 
+   <div class="discount-5"><p class="percent-5">- 20%</p>
+  </div>
+</div> 
+<div class="loadingbar-5"><img class="loading-5" src="./Loading Bar-5.svg" alt=""> 
+  <p class="sold-4">130 Sold</p>
+</div>
+   </div>
+
+
+   <div class="nivtebiscontainer-6">
+    <div class="aloe-container"><img class="aloe" src="./aloe.png" alt="">
+   </div>
+   <p class="head-6">Outdoor Plants</p> 
+   <p class="aloe-text">Aloe Vera Mini Ornamental Plant</p> 
+  <div class="pricepercent-6"> <p class="fasi-6">$19.50  <span class="newprice-6">$17.60 </span></p> 
+  
+  </div> 
+  <div class="loadingbar-6"><img class="loading-6" src="./Loading Bar-6.svg" alt=""> 
+  </div>
+</div> 
+
+   </div>
+
+   </div>
+    </div>  
+
+
+<div class="choose-maincontainer">
+  <div class="choose-container"> 
+  <div class="easier-container">
+    <p class="easier-header">Now Easier to Choose</p> 
+    <p class="new-features">New Features</p> 
+  </div>  
+
+  <div class="product-boxes">
+  <div class="fire-container"> 
+    <div class="fire-header">
+      <img class="fire-frame" src="./Vector.svg" alt=""> 
+      <p class="fire-text">Popular Product</p>
+    </div> 
+    <div class="product-stock"><p class="product">Product</p>
+    <p class="stock">341 Stock</p>
+  </div>
+  </div>  
+
+  <div class="glass-container"> 
+    <div class="fire-header">
+      <img class="glass-frame" src="./lupa.svg" alt=""> 
+      <p class="fire-text">Most Wanted</p>
+    </div> 
+    <div class="product-stock"><p class="product">Product</p>
+    <p class="stock">162 Stock</p>
+  </div>
+  </div>  
+
+  <div class="shirt-container"> 
+    <div class="fire-header">
+      <img class="shirt-frame" src="./shirt.svg" alt=""> 
+      <p class="fire-text">Top Fashion 2022</p>
+    </div> 
+    <div class="product-stock"><p class="product">Product</p>
+    <p class="stock">228 Stock</p>
+  </div>
+  </div> 
+
+  <div class="heart-container"> 
+    <div class="fire-header">
+      <img class="heart-frame" src="./heart svg.svg" alt=""> 
+      <p class="fire-text">Bestseller</p>
+    </div> 
+    <div class="product-stock"><p class="product">Product</p>
+    <p class="stock">422 Stock</p>
+  </div>
+  </div> 
+
+  <div class="shop-container"> 
+    <div class="fire-header">
+      <img class="shop-frame" src="./shop svg.svg" alt=""> 
+      <p class="fire-text">Best Shop 2022</p>
+    </div> 
+    <div class="product-stock"><p class="product">Product</p>
+    <p class="stock">52 Stock</p>
+  </div>
+  </div>
+  </div> 
+  <div class="underline-vector">
+    <svg class="underline" xmlns="http://www.w3.org/2000/svg" width="1360" height="2" viewBox="0 0 1360 2" fill="none">
+      <path d="M0 1H1360" stroke="#E2E2E2"/>
+    </svg>
+  </div>
+</div> 
+<div class="goodsinfo-container">
+  <div class="card-1">
+   <div class="blue-border"> <p class="card-text">The goods are ready stock and ready to be shipped</p>
+  </div>
+    <div class="pictures">
+      <img class="down-images" src="./clock image.png" alt=""> 
+      <img class="down-images" src="./cape image.png" alt="">
+    </div>
+  </div>
+
+  <div class="card-1">
+    <div class="pink-border"><p class="card-text">New items for those of you who want to pre order</p>
+    </div>
+    <div class="pictures">
+      <img class="down-images" src="./leptopi img.png" alt=""> 
+      <img class="down-images" src="./mobile img.png" alt="">
+    </div>
+  </div> 
+
+  <div class="card-1">
+    <div class="violet-border"><p class="card-text">New items for those of you who want to pre order</p>
+    </div>
+    <div class="pictures">
+      <img class="down-images" src="./botasi.png" alt=""> 
+      <img class="down-images" src="./sakidi image.png" alt="">
+    </div>
+  </div> 
+
+  <div class="card-1">
+    <div class="red-border"><p class="card-text">New items for those of you who want to pre order</p>
+    </div>
+    <div class="pictures">
+      <img class="down-images" src="./sunamo image.png" alt=""> 
+      <img class="down-images" src="./klaviatura image.png" alt="">
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+    <div class="todayproducts-container">
+      <div class="today"><p class="today-text">Today Is Only For You</p> 
+      </div> 
+
+     <div class="product-containers">
+       <div class="leptop-container">
+        <div class="nowtbook-container"><img class="nowtbook-image" src="./nowtbook image.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Computer & Laptop</p> 
+          <p class="textof-box">Neve Strix Pro L123 (2021) - TP399K 1TB</p> 
+          <div class="price-container">
+            <p class="price">$415.10</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.7</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Bandung</p> 
+  <p class="sold-quantity">390 Sold</p>
+
+          </div>
+        </div>
+       </div> 
+      <!-- <div class="leptop-container">  -->
+        <div class="leptop-container">
+          <div class="nowtbook-container"><img class="klaviaturis-surati" src="./klaviaturis surati.png" alt="">
+          </div> 
+          <div class="center-conatiner"> 
+            <p class="headerof-box">Computer & Laptop</p> 
+            <p class="textof-box">Dark King M346 Mechanical Keyboard - Free 31 Keys</p> 
+            <div class="price-container">
+              <p class="price">$12.54</p> 
+              <div class="evaluation-container"> 
+                <img class="star" src="./star frame.svg" alt=""> 
+              <p class="evaluation">4.8</p> 
+            </div>
+            </div> 
+            <div class="adgilmdebareoba-container">
+  
+    <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+    <p class="place-name">Kota Jakarta</p> 
+    <p class="sold-quantity">500 Sold</p>
+  
+            </div>
+          </div>
+         </div> 
+
+      
+
+      
+        <div class="leptop-container">
+          <div class="nowtbook-container"><img class="fexsacmlis-surati" src="./fexsacmlis surati.png" alt="">
+          </div> 
+          <div class="center-conatiner"> 
+            <p class="headerof-box">Fashion Man</p> 
+            <p class="textof-box">Reader Touring Coboy Brc Black Leather Boots</p> 
+            <div class="price-container">
+              <p class="price">$23.24</p> 
+              <div class="evaluation-container"> 
+                <img class="star" src="./star frame.svg" alt=""> 
+              <p class="evaluation">4.8</p> 
+            </div>
+            </div> 
+            <div class="adgilmdebareoba-container">
+  
+    <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+    <p class="place-name">Kota Surabaya</p> 
+    <p class="sold-quantity">450 Sold</p>
+  
+            </div>
+          </div>
+         </div> 
+      
+      
+
+        <div class="leptop-container">
+          <div class="nowtbook-container"><img class="mobile-surati" src="./mobile picture.png" alt="">
+          </div> 
+          <div class="center-conatiner"> 
+            <p class="headerof-box">Gudget Electronic</p> 
+            <p class="textof-box">Meta Galaxy X oliw10 5G sintra 256 GB</p> 
+            <div class="price-container">
+              <p class="price">$11.00</p> 
+              <div class="evaluation-container"> 
+                <img class="star" src="./star frame.svg" alt=""> 
+              <p class="evaluation">4.9</p> 
+            </div>
+            </div> 
+            <div class="adgilmdebareoba-container">
+  
+    <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+    <p class="place-name">Kota Yogyakarta</p> 
+    <p class="sold-quantity">540 Sold</p>
+  
+            </div>
+          </div>
+         </div> 
+
+      
+      <div class="leptop-container"> 
+        <div class="nowtbook-container"><img class="black-shirt" src="./black shirt image.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Fashion</p> 
+          <p class="textof-box">Overflow.id - Basic plain black t-shirt</p> 
+          <div class="price-container">
+            <p class="price">$17.34</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.8</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Jakarta</p> 
+  <p class="sold-quantity">200 Sold</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="leptop-container"> 
+        <div class="nowtbook-container"><img class="ball-image" src="./ball image.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Sports</p> 
+          <p class="textof-box">Leather bag packed with football</p> 
+          <div class="price-container ball-evaluation">
+            <p class="price">$18.23</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.8</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Solo</p> 
+  <p class="sold-quantity">320 Sold</p>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="leptop-container">
+        <div class="nowtbook-container"><img class="fexsacmlissurati-2" src="./fexsacmlis surati-2.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Woman Fashion</p> 
+          <p class="textof-box">Zineta Slip On Brown Sandals for Women</p> 
+          <div class="price-container">
+            <p class="price">$19.00</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">5</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Yogyalarta</p> 
+  <p class="sold-quantity">150 Sold</p>
+          </div>
+        </div>
+      </div>
+      <div class="leptop-container"> 
+
+        <div class="nowtbook-container"><img class="yelsabami" src="./yelsabamis foto.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Accessories</p> 
+          <p class="textof-box">Limited edition silver women's necklace</p> 
+          <div class="price-container">
+            <p class="price">$11.34</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.8</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Semarang</p> 
+  <p class="sold-quantity">240 Sold</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="leptop-container"> 
+
+        <div class="nowtbook-container"><img class="joistiki" src="./joistikis foto.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Gaming</p> 
+          <p class="textof-box">Playstation Gamepad Stick Controller</p> 
+          <div class="price-container">
+            <p class="price">$10.00</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.8</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Jakarta</p> 
+  <p class="sold-quantity">220 Sold</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="leptop-container"> 
+
+        <div class="nowtbook-container"><img class="savardzeli" src="./savardzlis foto.png" alt="">
+        </div> 
+        <div class="center-conatiner"> 
+          <p class="headerof-box">Property</p> 
+          <p class="textof-box">Premium foam minimalist black chair</p> 
+          <div class="price-container">
+            <p class="price">$42.00</p> 
+            <div class="evaluation-container"> 
+              <img class="star" src="./star frame.svg" alt=""> 
+            <p class="evaluation">4.8</p> 
+          </div>
+          </div> 
+          <div class="adgilmdebareoba-container">
+
+  <img class="adgilmdebareoba" src="./lockation frame.svg" alt=""> 
+  <p class="place-name">Kota Bogor</p> 
+  <p class="sold-quantity">1210 Sold</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div> 
+
+    <div class="banner-container">
+      <img class="baneris-foto" src="./Banner image.png" alt="">
+    </div> 
+
+    <div class="undercentral-container">
+      <div class="best-container">
+        <p class="best-shop">Best Shop at The Moment</p>
+      </div> 
+      <div class="thebest-shops">
+        <div class="shop-1">
+         <div class="position"> 
+          <img class="shoppicture-1" src="./shoppicture-1.png" alt=""> 
+          <img class="aircraft" src="./aircraft picture.svg" alt="">
+        </div> 
+        <div class="boxheader-container">
+          <p class="box-header">Super Shop</p>
+        </div> 
+        <div class="verification-container">
+          <p class="verification">Verification</p> 
+          <img class="verification-frame" src="./verification frame.svg" alt="">
+        </div> 
+        <div class="followed-container"> 
+          <div class="container-1">
+           <div class="name-quantity"> <p class="dasaxeleba">Product</p> 
+            <p class="raodenoba">1,264</p> 
+          </div>
+              <div class="vector2-container"> 
+              <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+              <path d="M0.5 34V0" stroke="#828282"/></svg>
+             </div> 
+        </div> 
+        
+        <div class="container-1"> 
+          <div class="name-quantity"> <p class="dasaxeleba">Followed</p> 
+            <p class="raodenoba">5,325</p> 
+          </div>
+              <div class="vector2-container"> 
+              <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+              <path d="M0.5 34V0" stroke="#828282"/></svg>
+             </div> 
+        </div>
+        <div class="container-1"> 
+          <div class="name-quantity"> 
+            <p class="dasaxeleba">Sold</p> 
+            <p class="raodenoba">5,264</p> 
+          </div>
+        </div>
+        </div> 
+
+      </div>  
+      <div class="shop-1">
+        <div class="position"> 
+          <img class="shoppicture-1" src="./tansacmeli.png" alt=""> 
+          <img class="aircraft" src="./9 frame.svg" alt="">
+        </div> 
+        <div class="boxheader-container">
+          <p class="box-header">Nine Fashion</p>
+        </div> 
+        <div class="verification-container">
+          <p class="verification">Verification</p> 
+          <img class="verification-frame" src="./verification frame.svg" alt="">
+        </div> 
+        <div class="followed-container"> 
+          <div class="container-1">
+           <div class="name-quantity"> <p class="dasaxeleba">Product</p> 
+            <p class="raodenoba">5,264</p> 
+          </div>
+              <div class="vector2-container"> 
+              <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+              <path d="M0.5 34V0" stroke="#828282"/></svg>
+             </div> 
+        </div> 
+        
+        <div class="container-1"> 
+          <div class="name-quantity"> <p class="dasaxeleba">Followed</p> 
+            <p class="raodenoba">6,352</p> 
+          </div>
+              <div class="vector2-container"> 
+              <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+              <path d="M0.5 34V0" stroke="#828282"/></svg>
+             </div> 
+        </div>
+        <div class="container-1"> 
+          <div class="name-quantity"> 
+            <p class="dasaxeleba">Sold</p> 
+            <p class="raodenoba">8,356</p> 
+          </div>
+        </div>
+        </div> 
+      </div> 
+      
+        <div class="shop-1"> 
+          <div class="position"> 
+            <img class="shoppicture-1" src="./utopia image.png" alt=""> 
+            <img class="aircraft" src="./U image.svg" alt="">
+          </div> 
+          <div class="boxheader-container">
+            <p class="box-header">Utopia Store</p>
+          </div> 
+          <div class="verification-container">
+            <p class="verification">Verification</p> 
+            <img class="verification-frame" src="./verification frame.svg" alt="">
+          </div> 
+          <div class="followed-container"> 
+            <div class="container-1">
+             <div class="name-quantity"> <p class="dasaxeleba">Product</p> 
+              <p class="raodenoba">4,973</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div> 
+          
+          <div class="container-1"> 
+            <div class="name-quantity"> <p class="dasaxeleba">Followed</p> 
+              <p class="raodenoba">2,834</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div>
+          <div class="container-1"> 
+            <div class="name-quantity"> 
+              <p class="dasaxeleba">Sold</p> 
+              <p class="raodenoba">3,836</p> 
+            </div>
+          </div>
+          </div> 
+
+        </div>
+        <div class="shop-1"> 
+          <div class="position"> 
+            <img class="shoppicture-1" src="./music image.png" alt=""> 
+            <img class="aircraft" src="./M svg.svg" alt="">
+          </div> 
+          <div class="boxheader-container">
+            <p class="box-header">Music Zerna</p>
+          </div> 
+          <div class="verification-container">
+            <p class="verification">Verification</p> 
+            <img class="verification-frame" src="./verification frame.svg" alt="">
+          </div> 
+          <div class="followed-container"> 
+            <div class="container-1">
+             <div class="name-quantity"> <p class="dasaxeleba">Product</p> 
+              <p class="raodenoba">2,736</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div> 
+          
+          <div class="container-1"> 
+            <div class="name-quantity"> <p class="dasaxeleba">Followed</p> 
+              <p class="raodenoba">3,345</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div>
+          <div class="container-1"> 
+            <div class="name-quantity"> 
+              <p class="dasaxeleba">Sold</p> 
+              <p class="raodenoba">2,132</p> 
+            </div>
+          </div>
+          </div> 
+
+        </div>
+        <div class="shop-1"> 
+          <div class="position"> 
+            <img class="shoppicture-1" src="./Rectangle 13.png" alt=""> 
+            <img class="aircraft" src="./a svg.svg" alt="">
+          </div> 
+          <div class="boxheader-container">
+            <p class="box-header">Amara Glow</p>
+          </div> 
+          <div class="verification-container">
+            <p class="verification">Verification</p> 
+            <img class="verification-frame" src="./verification frame.svg" alt="">
+          </div> 
+          <div class="followed-container"> 
+            <div class="container-1">
+             <div class="name-quantity"> <p class="dasaxeleba">Product</p> 
+              <p class="raodenoba">5,083</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div> 
+          
+          <div class="container-1"> 
+            <div class="name-quantity"> <p class="dasaxeleba">Followed</p> 
+              <p class="raodenoba">4,084</p> 
+            </div>
+                <div class="vector2-container"> 
+                <svg class="vector2" xmlns="http://www.w3.org/2000/svg" width="1" height="34" viewBox="0 0 1 34" fill="none"> 
+                <path d="M0.5 34V0" stroke="#828282"/></svg>
+               </div> 
+          </div>
+          <div class="container-1"> 
+            <div class="name-quantity"> 
+              <p class="dasaxeleba">Sold</p> 
+              <p class="raodenoba">3,376</p> 
+            </div>
+          </div>
+          </div> 
+        </div>
+    </div> 
+
+    <div class="recomendational-container">
+<p class="recomendation-text">Our Recommendation For You</p>  
+
+<div class="production-container"> 
+
+
+<div class="production"> 
+  <div class="foto-container">
+    <img class="foto-1" src="./surati image.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Computer & Laptop</p>  
+  </div> 
+  <p class="inner-text">Original World Premiere Super 5 Pro Tablet 8gb</p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$112.70</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.7</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Bandung</p> 
+<p class="soldquantity-2">390 Sold</p>
+  </div>
+
+
+</div>  
+
+<div class="production"> 
+  <div class="foto-container">
+    <img class="foto-2" src="./foto-2.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2 short-header">
+    <p class="header-text">Property</p>  
+  </div> 
+  <p class="inner-text">Wholcake GB38 - Living Room Chair with </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$16.54</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.8</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Jakarta</p> 
+<p class="soldquantity-2">500 Sold</p>
+  </div>
+  
+</div> 
+
+<div class="production"> 
+
+  <div class=" foto3container">
+    <img class="foto-3" src="./foto-3.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Computer & Laptop</p>  
+  </div> 
+  <p class="inner-text">Orneo minibook DP721 FLC I7 10510 16gb 512ssd  </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$228.23</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.9</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Surabaya</p> 
+<p class="soldquantity-2">450 Sold</p>
+  </div>
+  
+</div> 
+
+<div class="production"> 
+
+  <div class=" foto-container">
+    <img class="foto-4" src="./foto-4.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Gudget Electronic</p>  
+  </div> 
+  <p class="inner-text">Black and yellow cap headwear  </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$11.00</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.9</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Yogyakarta</p> 
+<p class="soldquantity-2">540 Sold</p>
+  
+</div>  
+</div>
+
+<div class="production"> 
+  <div class=" foto-container">
+    <img class="foto-5" src="./foto-5.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2 short-header">
+    <p class="header-text">Fashion</p>  
+  </div> 
+  <p class="inner-text">Domtrain Hiking Mountain Backpack  </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$27.31</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.8</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Jakarta</p> 
+<p class="soldquantity-2">200 Sold</p>
+  
+</div>  
+
+  
+</div>  
+</div>
+
+
+
+  
+<div class="production-container2"> 
+
+<div class="production"> 
+
+  <div class=" foto-container">
+    <img class="foto-6" src="./computer & leptop picture.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Computer & Laptop</p>  
+  </div> 
+  <p class="inner-text">Super Zeplin M26 (2022) - GG726XM-G9374G6T-1  </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$215.10</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.7</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Bandung</p> 
+<p class="soldquantity-2">390 Sold</p>
+  
+</div>  
+  
+</div> 
+
+<div class="production"> 
+
+  <div class=" foto-container">
+    <img class="foto-7" src="./klaviatura picture-2.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Computer & Laptop</p>  
+  </div> 
+  <p class="inner-text">Dark King M346 Mechanical Keyboard - Free 31 Keys  </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$12.54</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.8</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Jakarta</p> 
+<p class="soldquantity-2">500 Sold</p>
+  
+</div>  
+  
+</div> 
+
+<div class="production"> 
+
+  <div class=" foto-container">
+    <img class="foto-8" src="./fashion man picture.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Fashion Man</p>  
+  </div> 
+  <p class="inner-text">Reader Touring Coboy Brc Black Leather Boots </p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$23.24</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.9</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Surabaya</p> 
+<p class="soldquantity-2">450 Sold</p>
+  
+</div>  
+  
+</div> 
+
+<div class="production"> 
+
+  <div class=" foto-container">
+    <img class="foto-9" src="./mobile picture.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2">
+    <p class="header-text">Gudget Electronic</p>  
+  </div> 
+  <p class="inner-text">Meta Galaxy X oliw10 5G sintra 256 GB</p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$11.00</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.9</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Yogyakarta</p> 
+<p class="soldquantity-2">540 Sold</p>
+  
+</div>  
+  
+</div> 
+
+<div class="production">  
+  <div class=" foto-container">
+    <img class="foto-10" src="./black t-shirt picture.png" alt=""> 
+  </div> 
+  <div class="inner-div">
+  <div class="header-2 short-header">
+    <p class="header-text">Fashion</p>  
+  </div> 
+  <p class="inner-text">Overflow.id - Basic plain black t-shirt</p>
+  </div>  
+  <div class="pricecontainer-2">
+    <p class="price-2">$17.34</p> 
+    <div class="evaluationcontainer"> 
+      <img class="star-2" src="./star frame.svg" alt=""> 
+    <p class="evaluation-2">4.8</p> 
+  </div>
+  </div> 
+  <div class="adgilmdebareobacontainer">
+
+<img class="adgilmdebareoba-2" src="./lockation frame.svg" alt=""> 
+<p class="placename-2">Kota Jakarta</p> 
+<p class="soldquantity-2">200 Sold</p>
+</div>  
+</div>  
+</div>
+</div> 
+
+<div class="ending-container">
+  <div class="vector9-container">
+    <svg class="vector-9" xmlns="http://www.w3.org/2000/svg" width="1360" height="2" viewBox="0 0 1360 2" fill="none">
+      <path d="M0 1H1360" stroke="#E2E2E2"/>
+    </svg>  
+  </div>
+
+  <div class="top-part">
+    <div class="endingheader-container"><p class="endingheader-text">Now it's easier to open your shop</p>
+    </div>
+<div class="second-endingcontainer"><p class="underending-text">With simple step by step and easy help instructions to follow</p>
+</div>   
+
+<div class="ending-purchase">
+  <p class="open-shop">Open Shop</p> 
+  <svg class="last-errow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+    <g clip-path="url(#clip0_2236_7)">
+      <path d="M9.81846 9L6 5.11094L7.09077 4L12 9L7.09077 14L6 12.8891L9.81846 9Z" fill="white"/>
+    </g>
+    <defs>
+      <clipPath id="clip0_2236_7">
+        <rect width="18" height="18" fill="white"/>
+      </clipPath>
+    </defs>
+  </svg>
+</div> 
+
+<div class="vector9-container">
+  <svg class="vector-9 vector-11" xmlns="http://www.w3.org/2000/svg" width="1360" height="2" viewBox="0 0 1360 2" fill="none">
+    <path d="M0 1H1360" stroke="#E2E2E2"/>
+  </svg>  
+</div>
+  </div> 
+
+  <div class="brand-container">
+    <p class="brand-categories">Brand & Categories</p> 
+
+    <div class="brand-lists"> 
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Fashion Man</p>
+        <p class="product-list">Zeneta Fashion</p> 
+        <p class="product-list">Xgard 304</p>
+        <p class="product-list">Never Star</p>
+        <p class="product-list">Rillingen Hood</p>
+        <p class="product-list">DropBrain</p>
+        <p class="product-list">Red Pride</p>
+        <p class="product-list">Onedry 1998</p>
+        <p class="product-list">Starclothing</p>
+
+      </div> 
+
+      <div class="fashionman-container"> 
+       <div class="woman-fashion">
+         <p class="fashion-header">Woman Fashion</p>
+      </div> 
+      <p class="product-list">Fushion</p>
+      <p class="product-list">Aneta Glowing</p>
+      <p class="product-list">Amanda 19</p>
+      <p class="product-list">Kiosku</p>
+      <p class="product-list">Womandry</p>
+      <p class="product-list">Ababil</p>
+      <p class="product-list">Lowly Cloth</p>
+      </div> 
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Automotive</p> 
+
+        <p class="product-list">Star Label</p> 
+        <p class="product-list">My Star</p>
+        <p class="product-list">Automotive 09</p>
+        <p class="product-list">Recedrag</p>
+        <p class="product-list">Speedone</p>
+        <p class="product-list">Racer Shop</p>
+        <p class="product-list">Bengkel Motor 22</p>
+        <p class="product-list">Speedy Race</p>
+
+
+      </div> 
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Sports</p> 
+
+        <p class="product-list">Extra time ID</p>
+      <p class="product-list">Football Boys</p>
+      <p class="product-list">Onesports</p>
+      <p class="product-list">Liveball.id</p>
+      <p class="product-list">Sport 17</p>
+      <p class="product-list">Ball Player</p>
+      <p class="product-list">Aneta Futboll</p>
+
+      </div>
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Accesories</p> 
+
+        <p class="product-list">Antena</p>
+      <p class="product-list">Glimming</p>
+      <p class="product-list">Storeku</p>
+      <p class="product-list">Cempaka Store</p>
+      <p class="product-list">Memee.id</p>
+      
+      </div>
+
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Gaming</p> 
+
+        <p class="product-list">Stargame.id</p>
+        <p class="product-list">Dunia Games</p>
+        <p class="product-list">Vale Store</p>
+        <p class="product-list">Decade</p>
+        <p class="product-list">Deff Store</p>
+        <p class="product-list">Press Start.id</p>
+        
+
+      </div>
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Electronic</p> 
+
+        
+        <p class="product-list">Plotion</p>
+        <p class="product-list">Green Shop</p>
+        <p class="product-list">Simsang</p>
+        <p class="product-list">Semea.Store</p>
+        <p class="product-list">Ximpling Store 99</p>
+        <p class="product-list">Bobby.id</p>
+        <p class="product-list">Chinly</p> 
+        <p class="product-list">Store House</p>
+
+      </div> 
+
+      <div class="fashionman-container"> 
+        <p class="fashion-header">Property</p> 
+
+        <p class="product-list">Green Property</p>
+        <p class="product-list">A-Naiku House</p>
+        <p class="product-list">Dentis World</p>
+        <p class="product-list">A Property</p>
+        <p class="product-list">Bolam.id</p>
+        <p class="product-list">Houseme.Store</p>
+        <p class="product-list">PAUSMEN</p> 
+      </div>
+    </div>
+  </div> 
+</div> 
+
+<div class="vector9-container vector-12">
+  <svg class="vector-9" xmlns="http://www.w3.org/2000/svg" width="1360" height="2" viewBox="0 0 1360 2" fill="none">
+    <path d="M0 1H1360" stroke="#E2E2E2"/>
+  </svg>  
+</div>
+
+<div class="ending2-container">
+<p class="payment-method">Payment Method</p> 
+
+<div class="payments">
+  <img class="hexa" src="./hexa.png" alt=""> 
+  <img class="circle-img" src="./circle.png" alt=""> 
+  <img class="kanba" src="./kanba.png" alt=""> 
+  <img class="aven" src="./aven.png" alt="">
+  <img class="liva" src="./liva.png" alt="">
+  <img class="foxhub" src="./foxhub.png" alt=""> 
+  <img class="goldline" src="./goldline.png" alt=""> 
+  <img class="earth" src="./earht.png" alt="">
+  <img class="asgardia" src="./asgardia.png" alt="">
+</div>
+</div>
+
+
+
+<div class="slabshop-div">  
+  <p class="slabshop-header">Slabshop</p> 
+  <p class="slabshop-text">Aims to make it easier for every community in the world to carry out various buying and selling transactions online. Is one of the world's online buying and selling sites whose development is relatively fast. You can sell products online at the slabshop besides being able to enjoy the process of buying various products more quickly and effectively. 
+    You can sign up for the exclusive slabshop Seller community if you want to launch your own business.</p>
+
+    <p class="header-advantages">Advantages of joining Slabshop</p> 
+    <p class="big-text">Festive advertising In addition to offering all available product categories, Slabshop also regularly runs attractive promotions with prices you can access on the promo page. There are many options for promotions with different validity periods for various products, from smartphone promotions to promotions for inexpensive train tickets. The process is also very simple; all you have to do is enter the current coupon code or promotional code for the item you want to buy. festive advertising In addition to offering all available product categories, Slabshop also regularly runs attractive promotions with prices you can access on the promo page. 
+      There are many options for promotions with different validity periods for various products, from smartphone 
+      promotions to promotions for inexpensive train tickets. The process is also very simple, <span class="readmore"> Readmore</span></p>
+
+</div>
+  
+
+<div class="vector-14">
+  <svg xmlns="http://www.w3.org/2000/svg" width="1360" height="2" viewBox="0 0 1360 2" fill="none">
+    <path d="M0 1H1360" stroke="#E2E2E2"/>
+  </svg>
+</div>
+
+
+<div class="last-part"> 
+  <div class="last-container1"><p class="last-text1">Slabshop © 2021-2022, All Rights Reserved</p>
+  </div> 
+  <div class="last-container2">
+    <p class="privacy-policy">Privacy Policy</p>
+    <p class="Termsof-Use">Terms Of Use</p> 
+    <p class="FAQ">FAQ</p>
+  </div>
+</div>
+    
+  
+  </body>
+</html>
